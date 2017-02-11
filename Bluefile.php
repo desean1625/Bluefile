@@ -68,7 +68,7 @@ class Bluefile
         "B" => "b",
         "I" => "h",
         "L" => "i",
-        "X" => "q", //Not yet implemented in my Struct.php
+        "X" => "q",
         "F" => "f",
         "D" => "d",
 
