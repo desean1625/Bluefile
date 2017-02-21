@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Xmidas Bluefile reader Unpacks headers and extended headers
+ *
+ * @author Sean Sullivan
+ * @version 0.9
+ */
 class Bluefile
 {
     /**
@@ -68,7 +73,7 @@ class Bluefile
         "B" => "b",
         "I" => "h",
         "L" => "i",
-        "X" => "q",
+        "X" => "q", //Not yet implemented in my Struct.php
         "F" => "f",
         "D" => "d",
 
@@ -97,7 +102,8 @@ class Bluefile
         $hdr['file_name'] = basename($filename);
         $ext_start        = $hdr['ext_start'] * 512;
         fseek($fh, $ext_start);
-        $ext_headers       = fread($fh, $hdr['ext_size']);
+        $ext_headers = fread($fh, $hdr['ext_size']);
+        //$hdr['keywords'] = $this->unpack_ext_header($hdr['keywords'],$be);
         $hdr['ext_header'] = $this->unpack_ext_header($ext_headers, $be);
         print_r($hdr);
         return $hdr;
