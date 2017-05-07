@@ -1,0 +1,12 @@
+{
+    "name": "desean1625/bluefile",
+    "description": "Xmidas Bluefile reader in PHP",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+     "autoload": {
+        "psr-4": {
+            "Desean1625\\": "src"
+        }
+    }
+}
