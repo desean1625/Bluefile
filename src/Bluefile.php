@@ -82,7 +82,7 @@ class Bluefile
 
     public function __construct()
     {
-        $this->struct = new Desean1625\Struct();
+        $this->struct = new \Desean1625\Struct();
     }
 /**
  * @param $filename
