@@ -1,4 +1,5 @@
 <?php
+namespace Desean1625;
 /**
  * Xmidas Bluefile reader Unpacks headers and extended headers
  *
@@ -81,7 +82,7 @@ class Bluefile
 
     public function __construct()
     {
-        $this->struct = new Struct();
+        $this->struct = new Desean1625\Struct();
     }
 /**
  * @param $filename

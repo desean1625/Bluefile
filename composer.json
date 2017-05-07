@@ -2,7 +2,8 @@
     "name": "desean1625/bluefile",
     "description": "Xmidas Bluefile reader in PHP",
     "require": {
-        "php": "^5.3.3 || ^7.0"
+        "php": "^5.3.3 || ^7.0",
+        "desean1625/structphp": "^0.9012.0"
     },
      "autoload": {
         "psr-4": {
