@@ -106,7 +106,6 @@ class Bluefile
         $ext_headers = fread($fh, $hdr['ext_size']);
         //$hdr['keywords'] = $this->unpack_ext_header($hdr['keywords'],$be);
         $hdr['ext_header'] = $this->unpack_ext_header($ext_headers, $be);
-        print_r($hdr);
         return $hdr;
     }
 
